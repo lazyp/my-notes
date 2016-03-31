@@ -2,7 +2,11 @@
 >git clone remote_url_addr #克隆项目   
 >git pull origin master  #拉取项目代码   
 >git push origin master # 推送代码到远端仓库   
->git push --force origin master    #强制推送代码到远端仓库,当本地做了强制回滚,修改等操作,普通的push会被reject,必须加一个参数--force,慎用 
+>git push --force origin master    #强制推送代码到远端仓库,当本地做了强制回滚,修改等操作,普通的push会被reject,必须加一个参数--force,慎用   
+>git status #查看文件更改情况   
+>git add file_name #将一个文件添加到暂存区   
+>git add .   #可以将所有的更改过的文件添加到暂存区    
+>git commit -m "修改说明" #提交
 
 #### 回滚本地commit ####
 > Delete the most recent commit, keeping the work you've done:    
