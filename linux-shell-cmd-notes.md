@@ -8,3 +8,5 @@
 7. mkdir $dir_name #创建一个目录
 8. kill $pid #结束一个进程
 9. kill -9 $pid #强制结束一个进程
+10. clear #清空terminal屏幕
+11. man cmd_name # 查看命令帮助说明,eg. man clear
