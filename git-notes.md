@@ -15,6 +15,9 @@
 > Delete the most recent commit, destroying the work you've done:    
 > git reset --hard HEAD~1
 
+> 撤销(回退)某次commit   
+> git revert commit_hash_id **(revert会产生一个新的commit,回退代码)**
+
 #### git  项目迁移方案 ####
 > git clone --mirror 地址   
 > git push --mirror 新的地址   
