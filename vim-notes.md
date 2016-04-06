@@ -1,9 +1,11 @@
 ####基础
 安装vim:  
 Ubuntu/Debian:   
-> sudo apt-get install vim      
+> sudo apt-get install vim   
+
 RedHat/Centos:   
 > sudo yum install vim   
+
 <hr>
 #### 命令模式和编辑模式切换   
 1. vim file_name 打开一个文件,打开后默认处于vim命令模式,可按 **i** 在当前位置插入数据 或者 **o** 下一行位置开始插入数据,来进入编辑模式.   
