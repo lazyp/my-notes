@@ -11,4 +11,6 @@
 10. clear #清空terminal屏幕
 11. man cmd_name # 查看命令帮助说明,eg. man clear
 12. ls #查看当前目录下的所有文件和文件夹列表
-13. ls -la #查看包含'.'开始的隐藏文件和文件夹,以及详细的权限和创建时间,大小等信息
+13. ls -lha #查看包含'.'开始的隐藏文件和文件夹,以及详细的权限和创建时间,大小等信息
+14. cp src_file to_path # 将src_file复制到to_path
+15. cp -r src_dir to_dir #加`-r`参数可以复制目录
