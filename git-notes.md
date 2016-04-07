@@ -6,7 +6,8 @@
 >git status #查看文件更改情况   
 >git add file_name #将一个文件添加到暂存区   
 >git add .   #可以将所有的更改过的文件添加到暂存区    
->git commit -m "修改说明" #提交
+>git commit -m "修改说明" #提交   
+>git merge --no-ff dev_branch #合并分支dev_branch 到当前分支,加了--no-ff参数,避免丢失分支信息
 
 #### 回滚本地commit ####
 > Delete the most recent commit, keeping the work you've done:    
