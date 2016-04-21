@@ -1,5 +1,8 @@
 #####linux 常用基础命令
-
+1.安装软件命令
+  > redhat/centos: `yum install xxxx`   
+  > debain/ubuntu: `apt-get install xxx`
+  
 1. `cd`切换目录命令  
 >  `cd dir_name` #切换到dir_name目录   
 >  ```cd -``` 返回前一次的目录    
