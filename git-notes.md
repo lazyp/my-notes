@@ -8,6 +8,8 @@
 >git add .   #可以将所有的更改过的文件添加到暂存区    
 >git commit -m "修改说明" #提交   
 >git merge --no-ff dev_branch #合并分支dev_branch 到当前分支,加了--no-ff参数,避免丢失分支信息   
+>git checkout branch #分支切换    
+>git checkout -b branch #创建分支,并且切换到新分支    
 >git stash #命令,暂时保存一个中间状态,比如修改了一些文件,但是此时不愿意add/commit,就可以用stash保存该状态到一个堆栈中.           
  >  > `git stash` #推进暂存堆栈     
  >  > `git stash pop` #弹出堆栈第一个   
