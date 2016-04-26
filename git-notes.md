@@ -10,6 +10,11 @@
 >git merge --no-ff dev_branch #合并分支dev_branch 到当前分支,加了--no-ff参数,避免丢失分支信息   
 >git checkout branch #分支切换    
 >git checkout -b branch #创建分支,并且切换到新分支    
+>git branch #分支操作命令
+> > `git branch or git branch --list` #查看的本地分支信息
+> > `git branch name` #创建一个分支,但不切换到新分支   
+> > `git branch -d branch_name` #删除一个分支   
+> > `git branch -a` #列举所有的本地分支和远程分支列表       
 >git stash #命令,暂时保存一个中间状态,比如修改了一些文件,但是此时不愿意add/commit,就可以用stash保存该状态到一个堆栈中.           
  >  > `git stash` #推进暂存堆栈     
  >  > `git stash pop` #弹出堆栈第一个   
