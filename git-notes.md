@@ -20,7 +20,9 @@
  >  > `git stash` #推进暂存堆栈     
  >  > `git stash pop` #弹出堆栈第一个   
  >  > `git stash list` #查看当前暂存堆栈中的元素,最前面一列时一个id标识`stash@{0}`    
- >  > `git stash id标识` #id标识就是上面命令显示的第一列,`eg. git stash stash@{0}`    
+ >  > `git stash id标识` #id标识就是上面命令显示的第一列,`eg. git stash stash@{0}`
+
+ > `git push origin :branch_name` 删除远程分支,此条命令不会删除本地分支,只会删除远程对应的分支
 
 #### 回滚本地commit ####
 > Delete the most recent commit, keeping the work you've done:    
