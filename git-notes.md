@@ -10,14 +10,14 @@
 >git merge --no-ff dev_branch #合并分支dev_branch 到当前分支,加了--no-ff参数,避免丢失分支信息   
 
 >git checkout 命令总结
-> >`git checkout branch` #分支切换    
-> >`git checkout -b branch` #创建分支,并且切换到新分支   
-> >`git checkout xxx_file` #恢复xxx_file,用index中的文件覆盖,注意针对这个文件的修改会全部丢失
-> >`git checkout .` #恢复整个工作空间,丢掉所有的未add的修改
-> >`git checkout another_branch -- xxx` # 从其他分支拉取`文件xxx`或者`文件夹`到当前分支空间
-> >`git checkout commit_hash_id` #切换到某一个历史状态,此时分支挂靠在一个commit上面,此时可以执行`git checkout -b newbranch`命令从当前状态创建出一个新分支
-> >`git checkout -p another_branch` #和其他分支做diff,并提示是否merge的交互式对话框
-> >`git checkout -p another_branch -- file` #和其他分支的某一个文件做diff,并提示是否merge的交互式对话框
+> >`git checkout branch` #分支切换      
+> >`git checkout -b branch` #创建分支,并且切换到新分支     
+> >`git checkout xxx_file` #恢复xxx_file,用index中的文件覆盖,注意针对这个文件的修改会全部丢失   
+> >`git checkout .` #恢复整个工作空间,丢掉所有的未add的修改   
+> >`git checkout another_branch -- xxx` # 从其他分支拉取`文件xxx`或者`文件夹`到当前分支空间   
+> >`git checkout commit_hash_id` #切换到某一个历史状态,此时分支挂靠在一个commit上面,此时可以执行`git checkout -b newbranch`命令从当前状态创建出一个新分支    
+> >`git checkout -p another_branch` #和其他分支做diff,并提示是否merge的交互式对话框    
+> >`git checkout -p another_branch -- file` #和其他分支的某一个文件做diff,并提示是否merge的交互式对话框    
 
 >git branch #分支操作命令      
 > > `git branch or git branch --list` #查看的本地分支信息     
