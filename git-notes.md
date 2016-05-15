@@ -31,7 +31,13 @@
  >  > `git stash list` #查看当前暂存堆栈中的元素,最前面一列时一个id标识`stash@{0}`    
  >  > `git stash id标识` #id标识就是上面命令显示的第一列,`eg. git stash stash@{0}`
 
- > `git push origin :branch_name` 删除远程分支,此条命令不会删除本地分支,只会删除远程对应的分支
+ > `git push origin :branch_name` 删除远程分支,此条命令不会删除本地分支,只会删除远程对应的分支  
+ 
+> `git tag` 标签功能
+>  >`git tag` 默认列举已有｀标签｀列表
+> >`git tag v1.6` 创建一个轻量级标签，名字为v1.6
+> >`git tag v1.6 -m "relase version 1.6"`  -m 选项则指定了对应的标签说明
+> >`git push origin tag_name` 推送一个标签到远程仓库 ，`eg. git push origin v1.6`
 
 #### 回滚本地commit ####
 > Delete the most recent commit, keeping the work you've done:    
