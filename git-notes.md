@@ -50,7 +50,23 @@
 > git revert commit_hash_id **(revert会产生一个新的commit,回退代码)**   
 
 >撤销`git add`操作   
->`git rm --cache xxxx` 从暂存区删除,这个不会删除物理文件
+>`git rm --cache xxxx` 从暂存区删除,这个不会删除物理文件  
+
+#### 补丁制作和使用   
+###### 第一种简单方案  
+> 用`git diff`的结果就是一个patch,合并这类patch,直接需要用命令 `git apply patch.file`
+>> 这种方案会丢失提交commit author信息等
+
+###### 第二种方案 
+> 用 `git format-patch -M other_branch` 命令生成patch文件,合并需要用`git am xxx.patch`文件
+>> -M选项表示这个patch要和那个分支比对
+
+###### 两种方案对比
+> * 兼容性：很明显，git diff生成的Patch兼容性强。如果你在修改的代码的官方版本库不是Git管理的版本库，那么你必须使用git diff生成的patch才能让你的代码被项目的维护人接受。
+  * 除错功能：对于git diff生成的patch，你可以用git apply --check 查看补丁是否能够干净顺利地应用到当前分支中；如果git format-patch 生成的补丁不能打到当前分支，git am会给出提示，并协助你完成打补丁工作，你也可以使用git am -3进行三方合并，详细的做法可以参考git手册或者《Progit》。从这一点上看，两者除错功能都很强。
+  * 版本库信息：由于git format-patch生成的补丁中含有这个补丁开发者的名字，因此在应用补丁时，这个名字会被记录进版本库，显然，这样做是恰当的。因此，目前使用Git的开源社区往往建议大家使用format-patch生成补丁。
+
+
 
 #### git  项目迁移方案 ####
 > git clone --mirror 地址   
