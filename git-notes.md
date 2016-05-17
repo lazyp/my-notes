@@ -60,6 +60,7 @@
 ###### 第二种方案 
 > 用 `git format-patch -M other_branch` 命令生成patch文件,合并需要用`git am xxx.patch`文件
 >> -M选项表示这个patch要和那个分支比对
+>>  这种方案是根据两个分支的commit信息做对比生成补丁稳定,可能生成多个补丁文件.
 
 ###### 两种方案对比 (http://www.cnblogs.com/y041039/articles/2411600.html)
 > * 兼容性：很明显，git diff生成的Patch兼容性强。如果你在修改的代码的官方版本库不是Git管理的版本库，那么你必须使用git diff生成的patch才能让你的代码被项目的维护人接受。  
