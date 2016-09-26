@@ -20,3 +20,9 @@
 
 ## 交叉编译
 CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build
+参数解释：
+```
+    CGO_ENABLED=0 ;//关闭cgo功能
+    GOOS=linux;//操作系统，linux/windows/darwin 
+    GOARCH=amd64;//操作系统位数，如64位:GOARCH=amd64，32位:GOARCH=386
+```
