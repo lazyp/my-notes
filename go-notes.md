@@ -26,3 +26,8 @@ CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build
     GOOS=linux;//操作系统，linux/windows/darwin 
     GOARCH=amd64;//操作系统位数，如64位:GOARCH=amd64，32位:GOARCH=386
 ```
+
+## windows编译后台进程
+> 参数: -H windowsgui  
+
+`go build -ldflags "-H windowsgui"`
