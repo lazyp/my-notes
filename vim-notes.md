@@ -32,3 +32,12 @@ RedHat/Centos:
     :vsplit  简写  :vsp  #左右分屏
 ```
 * 多个子窗口间切换```Ctrl+ww``` 依次向后切换到下一个窗格中
+
+#### 在vim输入以下命令就可以格式化json内容
+`
+:%!python -m json.tool
+
+> 可以在~/.vimrc增加快捷键
+> map <F4> <Esc>:%!python -m json.tool<CR>
+
+`
