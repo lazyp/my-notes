@@ -73,8 +73,8 @@
 
 
 
-#### git  项目迁移方案 ####
-> git clone --mirror 地址   
+#### git  项目迁移方案 (可保留所有的commit记录和时间信息) ####
+> git clone --bare 地址   
 > git push --mirror 新的地址   
 
 #### 修改上一次提交的用户名和email可以用以下命令 ####
