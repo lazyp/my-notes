@@ -46,10 +46,13 @@
 > Delete the most recent commit, destroying the work you've done:    
 > git reset --hard HEAD~1
 
-> 撤销(回退)某次commit   
-> git revert commit_hash_id **(revert会产生一个新的commit,回退代码)**   
+> 回滚到某个commitid    
+> git reset --hard commitid(commit hash)    
 
->撤销`git add`操作   
+> 撤销(回退)某次commit    
+> git revert commit_hash_id **(revert会产生一个新的commit,回退代码)**     
+
+>撤销`git add`操作      
 >`git rm --cache xxxx` 从暂存区删除,这个不会删除物理文件  
 
 #### 补丁制作和使用   
@@ -70,8 +73,8 @@
 
 
 
-#### git  项目迁移方案 ####
-> git clone --mirror 地址   
+#### git  项目迁移方案 (可保留所有的commit记录和时间信息) ####
+> git clone --bare 地址   
 > git push --mirror 新的地址   
 
 #### 修改上一次提交的用户名和email可以用以下命令 ####
@@ -95,3 +98,8 @@
   git push origin master
 ```
 > 更加详细的介绍:https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97
+
+#### git http/https proxy
+> git config --global http.proxy "proxyurl"    
+> git config --global https.proxy "proxyurl"    
+

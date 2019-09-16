@@ -1,4 +1,4 @@
-#####linux 常用基础命令
+#### linux 常用基础命令
 1.安装软件命令
 > redhat/centos: `yum install xxxx`   
 > debain/ubuntu: `apt-get install xxx`  
@@ -56,3 +56,10 @@
 17.`tar` #打包,解压命令
 > `tar -xvf xxx.tar.gz` #解压一个压缩包
 > `tar -cvzf xxx.tar.gz xxx` #压缩一个文件夹(xxx)
+
+18. `lsof -i` #查看网络连接的一些信息
+
+19. `nohup` #后台运行程序
+> `nohup abc.sh &` 日志默认输出到nohup.out文件
+> `nohup abc.sh > abc.log 2>&1 &` 日志重定向到abc.log文件，错误异常日志也重定向输出到abc.log
+
