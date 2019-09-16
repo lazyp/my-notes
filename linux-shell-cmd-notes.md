@@ -58,3 +58,8 @@
 > `tar -cvzf xxx.tar.gz xxx` #压缩一个文件夹(xxx)
 
 18. `lsof -i` #查看网络连接的一些信息
+
+19. `nohup` #后台运行程序
+> `nohup abc.sh &` 日志默认输出到nohup.out文件
+> `nohup abc.sh > abc.log 2>&1 &` 日志重定向到abc.log文件，错误异常日志也重定向输出到abc.log
+
