@@ -8,3 +8,8 @@
 4.docker container prune  移除所有的已终止的容器，kill后container引用还在
 
 5.docker commit containerid imagename:version 保存在容器中的修改配置等信息；可以保存为新的镜像名或者直接更新当前镜
+> `docker commit -m="test update" -a="wangsir" 44652ba46352 wangsir/centos-test:7.4.1708`   
+>-m:提交的描述信息  
+>-a:指定镜像作者   
+>44652ba46352：容器ID   
+>wangsir/centos-test:7.4.1708:指定要创建的目标镜像名   
