@@ -36,7 +36,8 @@
 11.`netstat` #查看本机网络连接信息    
 > `netstat --help` 查看命令说明   
 > `netstat -ant` 查看所有的tcp连接信息  
-> `netstat -tnl` 查看tcp listening的端口情况   
+> `netstat -tnl` 查看tcp listening的端口情况  
+> `netstat -tnlp | grep 8080` 或 `lsof -i:8080` 查看占用端口8080的进程
 
 12.`cp src_file to_path`# 将src_file复制到to_path   
 > `cp -r src_dir to_dir` #加`-r`参数可以复制目录  
@@ -62,4 +63,9 @@
 19. `nohup` #后台运行程序
 > `nohup abc.sh &` 日志默认输出到nohup.out文件
 > `nohup abc.sh > abc.log 2>&1 &` 日志重定向到abc.log文件，错误异常日志也重定向输出到abc.log
+
+20. `history` #使用命令历史记录   
+> `export HISTTIMEFORMAT="%F %T "` #可以现实使用命令的时间
+
+
 
