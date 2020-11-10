@@ -67,5 +67,6 @@
 20. `history` #使用命令历史记录   
 > `export HISTTIMEFORMAT="%F %T "` #可以现实使用命令的时间
 
+21. `find . -name ".git" | xargs rm -Rf` #查找`.git`并删除
 
 
